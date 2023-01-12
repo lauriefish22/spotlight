@@ -14,8 +14,8 @@ Output:
 
 */
 
-export function addExclamationPoints(string) {
-    return string + '!!!';
+export function addExclamationPoints() {
+    return true;
 }
 
 // This function should take in a number and multiply it by seven
@@ -31,7 +31,7 @@ Output:
 */
 
 export function multiplyBySeven(num) {
-    return num * '7';
+    return true;
 }
 
 // This function should take in a number and multiply it by twelve then cut the result in half
@@ -151,32 +151,3 @@ export function getLastItem(array) {
 
 // This function should take a dog object and return an <li> with the name of the dog
 /* 
-Input:
-
-{name: 'Benny', age: 6}
-
-Output: 
-
-<li>Benny</li>
-
-*/
-
-export function renderDogLI(dog) {
-    return true;
-}
-
-// This function should take a dog object and return a div with the dog's information
-/* 
-Input:
-
-{name: 'Benny', age: 6}
-
-Output: 
-
-<div><h1>Benny</h1><p>Benny is 6 years old</p></div>
-
-*/
-
-export function renderDogDiv() {
-    return true;
-}

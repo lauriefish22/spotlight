@@ -129,7 +129,6 @@ Output:
 */
 
 export function getSecondItem(array) {
-    const secondItem = array[1];
     return array[1];
 }
 
@@ -147,7 +146,7 @@ Output:
 */
 
 export function getLastItem(array) {
-    return true;
+    return array[3];
 }
 
 // This function should take a dog object and return an <li> with the name of the dog

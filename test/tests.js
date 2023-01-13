@@ -108,6 +108,28 @@ test('This function should take in two numbers and return a greeting announcing 
 
 test('This function should take an array and return the second item in the array', (expect) => {
     const expected = 'apple';
-    const actual = getSecondItem[('kiwi', 'apple', 'orange', 'plum')];
+    const actual = getSecondItem(['kiwi', 'apple', 'orange', 'plum']);
     expect.deepEqual(actual, expected);
+
+    const expected1 = 'tom';
+    const actual1 = getSecondItem(['bob', 'tom', 'jane', 'sally']);
+    expect.deepEqual(actual1, expected1);
+
+    const expected2 = 'pig';
+    const actual2 = getSecondItem(['cow', 'pig', 'chicken', 'mouse']);
+    expect.deepEqual(actual2, expected2);
+});
+
+test('This function should take an array and return the last item in the array', (expect) => {
+    const expected = 'plum';
+    const actual = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
+    expect.deepEqual(actual, expected);
+
+    const expected1 = 'sally';
+    const actual1 = getLastItem(['bob', 'tom', 'jane', 'sally']);
+    expect.deepEqual(actual1, expected1);
+
+    const expected2 = 'mouse';
+    const actual2 = getLastItem(['cow', 'pig', 'chicken', 'mouse']);
+    expect.deepEqual(actual2, expected2);
 });
